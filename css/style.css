@@ -1,0 +1,96 @@
+/*
+Colors used:
+Primary Color (Black): #000000;
+Secondary Color (Blue): #012B55;
+Visited Button Color (Blue): #012B55;
+Hover Button Color (Tyrian Purple): #55012B;
+Active Button Color (Red Oxide): #550101;
+Button Border Color (Navy): #010155;
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #012B55
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+#container {
+  background-color: lightblue;
+  color: #ffffff;
+  padding: 20px;
+  width: 566px;
+  text-align: center;
+}
+a {
+  color: #012B55;
+  text-decoration: none; /*No underlining*/
+}
+a:visited { /* visited link */
+  color: #012B55;
+}
+a:hover,
+a:focus {
+  color:#55012B;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  color: #550101;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
+  background-color: #012B55;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #010155; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active {
+  background-color: #550101;
+}
+.button.contact {
+  background-color: transparent;
+  color: #012B55 !important;
+  text-transform: uppercase;
+  border: 2px solid #012B55
+}
+.button.contact:hover {
+  background-color: #012B55;
+  color: #ffffff !important;
+}
+.button.contact:active {
+  background-color: #550101;
+}
+.button.resume {
+  display: inline-block;
+  background-color: #012B55;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #010155;
+  transition: 0.2s opacity;
+}
