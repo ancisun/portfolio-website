@@ -32,7 +32,14 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-#container {
+#work {
+  background-color: lightblue;
+  color: #ffffff;
+  padding: 20px;
+  width: 566px;
+  text-align: center;
+}
+#contact {
   background-color: lightblue;
   color: #ffffff;
   padding: 20px;
