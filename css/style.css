@@ -6,7 +6,11 @@ Visited Button Color (Blue): #012B55;
 Hover Button Color (Tyrian Purple): #55012B;
 Active Button Color (Red Oxide): #550101;
 Button Border Color (Navy): #010155;
+Background Color (Light Grey): #d3d3d3;
 */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
@@ -33,15 +37,25 @@ h4 {
   font-weight: 400;
 }
 #work {
-  background-color: lightblue;
-  color: #ffffff;
+  background-color: #d3d3d3;
+  color: #000000;
   padding: 20px;
   width: 566px;
   text-align: center;
 }
+#hero {
+  background-color: #d3d3d3;
+  color: #000000;
+  padding: 20px;
+  width: 566px;
+  text-align: center;
+}
+#hero h1 {
+  text-align: center; /*centers text*/
+}
 #contact {
-  background-color: lightblue;
-  color: #ffffff;
+  background-color: #d3d3d3;
+  color: #000000;
   padding: 20px;
   width: 566px;
   text-align: center;
@@ -100,4 +114,11 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #010155;
   transition: 0.2s opacity;
+}
+/*Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0px left and right */
 }
