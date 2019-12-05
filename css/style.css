@@ -43,6 +43,8 @@ h4 {
   width: 566px;
   text-align: center;
 }
+#work.row { padding-bottom: 25px;
+}
 #hero {
   background-color: #d3d3d3;
   color: #000000;
