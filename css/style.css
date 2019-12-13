@@ -22,45 +22,64 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-  color: #012B55
+  text-align: center;
 }
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  text-align: center;
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+  text-align: center;
+}
+p {
+  text-align: center;
 }
 #work {
-  background-color: #d3d3d3;
-  color: #000000;
-  padding: 20px;
-  width: 566px;
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
   text-align: center;
-}
-#work.row { padding-bottom: 25px;
+  margin-bottom: auto;
 }
 #hero {
-  background-color: #d3d3d3;
-  color: #000000;
-  padding: 20px;
-  width: 566px;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
   text-align: center;
-}
-#hero h1 {
-  text-align: center; /*centers text*/
 }
 #contact {
-  background-color: #d3d3d3;
-  color: #000000;
-  padding: 20px;
-  width: 566px;
+  background-color: #f0f0f0;
+  padding: 5px 0;
+  display: inline-block;
+  width: 100%;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+#about {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#story {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: auto;
 }
 a {
   color: #012B55;
@@ -86,6 +105,7 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #010155; /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-align: center;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -123,4 +143,48 @@ a:active { /* selected link */
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0px left and right */
+}
+#work.row {padding-bottom: 25px;
+}
+#hero.row {padding-bottom: 25px;
+}
+#contact.row {padding-bottom: 25px;
+}
+.logo {
+  max-width: 100px;
+  text-align: center;
+}
+header {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 7px 7px 5px 0px rgba(192, 192, 192, 0.75);
+}
+#mainbackground {
+  padding-top: 130px;
+}
+#aboutbackground {
+  padding-top: 100px;
+}
+#workbackground {
+  padding-top: 175px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #012B55
+}
+nav {
+  display: inline-block;
+  width: 100%;
 }
