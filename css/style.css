@@ -8,63 +8,77 @@ Active Button Color (Red Oxide): #550101;
 Button Border Color (Navy): #010155;
 Background Color (Light Grey): #d3d3d3;
 */
-
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 18px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 700;
   text-align: center;
 }
+
 h3 {
-  font-size: 1.75em;
+  font-size: 1.35em;
   font-weight: 400;
   text-align: center;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
   text-align: center;
 }
+
 p {
   text-align: center;
 }
+
 img {
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
+
 .project-wrapper {
   padding: 10px;
 }
-#work {
-  background-color: #ffffff;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin-bottom: auto;
-}
+
 #hero {
   background-color: #f0f0f0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin-top: 75px;
 }
+
+#work {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 #contact {
   background-color: #f0f0f0;
   padding: 5px 0;
@@ -74,13 +88,15 @@ img {
   margin-top: 20px;
   margin-bottom: auto;
 }
-#about {
+
+#about{
   background-color: #ffffff;
   padding: 75px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
+
 #story {
   background-color: #ffffff;
   padding: 20px 0;
@@ -89,53 +105,27 @@ img {
   text-align: center;
   margin-bottom: auto;
 }
+/* Links */
 a {
   color: #012B55;
-  text-decoration: none; /*No underlining*/
-}
-a:visited { /* visited link */
-  color: #012B55;
-}
-a:hover,
-a:focus {
-  color:#55012B;
-  text-decoration: underline;
-}
-a:active { /* selected link */
-  color: #550101;
-}
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
-  background-color: #012B55;
-  color: #ffffff !important; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #010155; /* width of the border, type, color */
-  transition: 0.2s opacity;
-  text-align: center;
-}
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button:active {
-  background-color: #550101;
+
+a:visited {
+  color: #012B55;
 }
-.button.contact {
-  background-color: transparent;
-  color: #012B55 !important;
-  text-transform: uppercase;
-  border: 2px solid #012B55
+
+a:hover,
+a:focus {
+  color: #55012B;
+  text-decoration: underline;
 }
-.button.contact:hover {
-  background-color: #012B55;
-  color: #ffffff !important;
+
+a:active {
+  color: #550101;
 }
-.button.contact:active {
-  background-color: #550101;
-}
-.button.resume {
+
+.button {
   display: inline-block;
   background-color: #012B55;
   color: #ffffff !important;
@@ -146,23 +136,92 @@ a:active { /* selected link */
   transition: 0.2s opacity;
 }
 
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #550101;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #012B55 !important;
+  text-transform: uppercase;
+  border: 2px solid #012B55
+}
+
+.button.contact:hover {
+  background-color: #012B55;
+  color: #ffffff !important;
+}
+
+.button.contact:active {
+  background-color: #550101;
+}
+
+.button.resume {
+  display: inline-block;
+  background-color: #012B55;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #010155;
+  transition: 0.2s opacity;
+}
+/* Berlin image animation*/
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 /*Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0px left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0px left and right */
 }
-#work.row {padding-bottom: 25px;
+
+#work.row {
+  padding-bottom: 25px;
 }
-#hero.row {padding-bottom: 25px;
+
+#hero.row {
+  padding-bottom: 25px;
 }
-#contact.row {padding-bottom: 25px;
+
+#contact.row {
+  padding-bottom: 25px;
 }
+
 .logo {
   max-width: 100px;
   text-align: center;
 }
+
 header {
   background-color: #f0f0f0;
   text-align: center;
@@ -171,28 +230,31 @@ header {
   width: 100%;
   box-shadow: 7px 7px 5px 0px rgba(192, 192, 192, 0.75);
 }
-#mainbackground {
-  padding-top: 100px;
-}
+
 #aboutbackground {
   padding-top: 100px;
 }
+
 #workbackground {
   padding-top: 175px;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #012B55
 }
+
 nav {
   display: inline-block;
   width: 100%;
@@ -204,22 +266,48 @@ nav {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   .col-md-6 {
     width: 50%;
+    float: left;
   }
+
   [class*="col-"] {
     float: left;
-    padding-right: 10px;
+    padding: 10px;
+  }
+
+  .row::after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 {margin-top: 0;}
+}
+
+/* Large devices (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-/* Large devices (1024px or larger) */
-@media only screen and (min-width: 1024px){
-}
+
 /* X-large devices (1440px or larger) */
-@media only screen and (min-width: 1440px){
-}
+@media only screen and (min-width: 1440px) {}
