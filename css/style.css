@@ -40,6 +40,8 @@ h3 {
   font-size: 1.35em;
   font-weight: 400;
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 h4 {
@@ -83,7 +85,7 @@ img {
   margin-bottom: auto;
 }
 
-#about{
+#about {
   background-color: #ffffff;
   padding: 75px 0;
   display: inline-block;
@@ -99,6 +101,7 @@ img {
   text-align: center;
   margin-bottom: auto;
 }
+
 /* Links */
 a {
   color: #012B55;
@@ -165,30 +168,54 @@ a:active {
   border-bottom: 2px solid #010155;
   transition: 0.2s opacity;
 }
-/* Berlin image animation*/
 
+/* Berlin image animation*/
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0, 50px);}
-  to {transform: translate(200px, 50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px, 48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /*Layout styling */
 .container {
   padding: 0 15px;
@@ -278,11 +305,14 @@ nav {
   }
 
   .row::after {
-    content:"";
+    content: "";
     clear: both;
     display: table;
   }
-  #about-page h3 {margin-top: 0;}
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
 /* Large devices (1024px or larger) */
@@ -290,12 +320,15 @@ nav {
   .col-lg-7 {
     width: 58.33%;
   }
+
   .col-lg-5 {
     width: 41.66%;
   }
+
   .col-lg-6 {
     width: 50%;
   }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
