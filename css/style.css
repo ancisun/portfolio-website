@@ -54,12 +54,6 @@ p {
 
 img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-.project-wrapper {
-  padding: 10px;
 }
 
 #hero {
