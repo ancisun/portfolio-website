@@ -9,20 +9,25 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link href="favicon.png" rel="shortcut icon" type="image/png">
   <meta name="viewport" content="width=device=width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <img src="img/about/ancisun_logo.svg" alt="Anci's logo" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
   <main>
     <div id="hero">
@@ -39,8 +44,8 @@
           <div class="row">
             <div class="col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/ink.io/ink.io_background.png" media="(max-width:767px)">
-                <img src="img/ink.io/ink.io_background.png" alt="Ink.io Tattoo App Mockup">
+                <source srcset="img/ink.io/ink.io_backgroundcopy.png" media="(max-width:767px)">
+                <img src="img/ink.io/ink.io_backgroundcopy.png" alt="Ink.io Tattoo App Mockup">
               </picture>
             </div>
             <div class="col-md-6 col-lg-5">
@@ -1027,7 +1032,6 @@
       <p>&copy; Copyright 2019</p>
     </div>
   </footer>
-  <script src="js/scripts.js"></script>
 </body>
 
 </html>
