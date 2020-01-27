@@ -71,6 +71,10 @@ header {
   box-shadow: 3px 3px 3px 0px rgba(192, 192, 192, 0.75);
 }
 
+#workbackground {
+  padding-top: 175px;
+}
+
 #hero {
   background-color: #ffffff;
   padding: 50px 0;
