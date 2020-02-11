@@ -25,15 +25,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  background-color: #ffffff;
+  font-size: 2.25em;
   font-weight: 700;
   text-align: center;
   color: #E15958;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  background-color: #ffffff;
+  font-size: 1.75em;
+  font-weight: 400;
   text-align: center;
   color: #E15958;
 }
@@ -44,16 +46,17 @@ h3 {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  color: #E15958;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.00em;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 p {
-  text-align: center;
+  text-align: left;
 }
 
 img {
@@ -65,18 +68,17 @@ img {
 
 header {
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 0px 0;
   position: fixed;
   width: 100%;
   box-shadow: 3px 3px 3px 0px rgba(192, 192, 192, 0.75);
 }
 
 #workbackground {
-  padding-top: 175px;
+  padding-top: 100px;
 }
 
 #hero {
-  background-color: #ffffff;
   padding: 50px 0;
   display: inline-block;
   width: 100%;
@@ -93,14 +95,13 @@ header {
 }
 
 #contact {
-  background-color: #fffffff;
+  background-color: #ffffff;
   padding: 5px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: auto;
-  box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.75);
 }
 
 #about {
@@ -162,9 +163,9 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #012B55 !important;
+  color: #E15958 !important;
   text-transform: uppercase;
-  border: 2px solid #012B55
+  border: 2px solid #E15958
 }
 
 .button.contact:hover {
@@ -241,6 +242,7 @@ a:active {
 
 .row {
   margin: 25px 0;
+  border-bottom: 1px solid #b0afb2;
   /* 25px top and bottom, 0px left and right */
 }
 
