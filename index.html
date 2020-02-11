@@ -6,7 +6,7 @@
   <title>Anci Sun</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="favicon.png" rel="shortcut icon" type="image/png">
   <meta name="viewport" content="width=device=width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -17,58 +17,60 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-      <img src="img/about/ancisun_logo.png" alt="Anci Sun logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></i></a></li>
-        </ul>
-      </nav>
+        <a href="index.html"> <img src="img/about/ancisun_logo.png" alt="Anci Sun logo" style="max-height:60px" class="logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
   </header>
   <main>
     <div id="hero">
       <div class="container">
         <h1>Hi! I'm Anci Sun.</h1>
         <span>I'm a User Experience Designer based in San Francisco, CA.</span>
-        <span>The theme throughout my career is being a problem solver, whether it's analyzing feedback to improve hiring processes, or connecting with stakeholders to collaborate on solutions. I'm committed to contributing my skills and knowledge to solve complex problems in an effort to promote a safer, user-friendlier world.</span>
+        <span>The theme throughout my career is being a problem solver, whether it's analyzing feedback to improve hiring processes, or connecting with stakeholders to collaborate on solutions. I'm committed to contributing my skills and knowledge to
+          solve complex problems in an effort to promote a safer, user-friendlier world.</span>
       </div>
     </div>
     <div>
       <div id="work">
         <div class="container">
-          <h2>Work</h2>
+          <h2>UX Projects</h2>
           <div class="row">
             <div class="col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/ink.io/ink.io_backgroundcopy.png" media="(max-width:767px)">
-                <img src="img/ink.io/ink.io_backgroundcopy.png" alt="Ink.io Tattoo App Mockup">
+                <source srcset="img/wctd/wctd_background_copy.png" media="(max-width:767px)">
+                <img src="img/wctd/wctd_background_copy.png" alt="WCTD Background Image">
               </picture>
             </div>
             <div class="col-md-6 col-lg-5">
-              <h3>Inked</h3>
-              <p>Inked is a platform that centralizes tattoo information and services with one mission in mind: to simplify the tattoo process for new and existing users.</p>
-              <a href="inkio.html" class="button">Read more</a>
+              <h3>We Connect The Dots</h3>
+              <p>We Connect The Dots is a non-profit organization with a mission to educate students about careers in the Sciences, Technology, Engineering, Arts, and Mathematics (STEAM). WCTD partners with several communities in education,
+                government, and technology to provide awareness and opportunities for students pursuing these fields.</p>
+              <a href="wctd.html" class="button">Read more</a>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/wordly/wordly_background.png" media="(max-width:767px)">
-                <img src="img/wordly/wordly_background.png" alt="Wordly Vocabulary App Mockup">
+                <source srcset="img/fluid_notes/fluid_notes_background_copy.png" media="(max-width:767px)">
+                <img src="img/fluid_notes/fluid_notes_background_copy.png" alt="Wordly Vocabulary App Mockup">
               </picture>
             </div>
             <div class="col-md-6 col-lg-5">
-              <h3>Wordly</h3>
-              <p>Wordly is designed to help students prepare for an important college entrance exam, the SAT, by utilizing strategic methods to help them optimize their preparation.</p>
-              <a href="#" class="button">Read more</a>
+              <h3>Fluid Notes</h3>
+              <p>Fluid Notes is a lightweight app that can be used to keep track of lists, memos, and any other notes you might have to jot down at a moment's notice.</p>
+              <a href="#" class="button">Coming Soon</a>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-md-7">
+            <div class="col-md-6 col-lg-7">
               <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917" />
@@ -1008,6 +1010,10 @@
                 </g>
               </svg>
             </div>
+            <div class="col-md-6 col-lg-5">
+              <h3>Berlin Animation</h3>
+              <p>An animation made with CSS.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1017,14 +1023,12 @@
     <div class="container">
       <h2>Get in Touch</h2>
       <p>Like what you see? Feel free to get in touch to discuss opportunities.</p>
-      <nav>
-        <ul>
-          <li><i class="fa fa-envelope"></i> <a href="mailto:anci.sun@berkeley.edu" class="button contact">Email me</a>
-          <li><i class="fa fa-skype"></i> <a href="skype:anci.sun">Skype</a>
-          <li><i class="fa fa-linkedin"></i> <a href="http://www.linkedin.com/in/ancisun" target="_blank">LinkedIn</a>
-          <li><i class="fa fa-behance"></i><a href="http://www.behance.net/ancisun" target="_blank">Behance</a>
-        </ul>
-      </nav>
+    </div>
+    <div>
+      <a href="mailto:anci.sun@berkeley.edu" class="button contact">Email me</a>
+    </div>
+    <div class="container">
+      <a href="http://www.linkedin.com/in/ancisun" target="_blank">LinkedIn</a>
     </div>
     <div>
       <p>&copy; Copyright 2019</p>
