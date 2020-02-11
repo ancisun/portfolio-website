@@ -6,7 +6,7 @@
   <title>Anci Sun - About Me</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="favicon.png" rel="shortcut icon" type="image/png">
   <meta name="viewport" content="width=device=width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -17,13 +17,13 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-      <img src="img/about/ancisun_logo.png" alt="Anci's logo" class="logo">
+      <a href="index.html"> <img src="img/about/ancisun_logo.png" alt="Anci Sun logo" style="max-height:60px" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></i></a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -38,21 +38,25 @@
       </div>
       <picture>
         <source srcset="img/about/headshot.jpg" media="(max-width:767px)">
-        <img src="img/about/headshot.jpg" alt="Professional Headshot">
+        <img src="img/about/headshot.jpg" style="max-height:350px" alt="Professional Headshot">
       </picture>
       <div class="row">
-        <div>
+        <div class="container">
           <h2>My Story</h2>
+          <div>
           <p>I've traveled an unconventional path to become a User Experience Designer. I began my career in recruiting and human resources, which is where I first learned about UX by sitting in on design workshops and conversing with designers.</p>
           <p>My curiosity to learn more about this field extended beyond the workshops and conversations, and amongst many reflections and discussions, I realized it was time for a career change. During this period of reflection, I recognized an important parallel between recruiting and design: both fields put the user first.</p>
           <p>As a former recruiting professional, I understand the importance of putting users first. I learned to develop relationships with my candidates by building on communication, empathy, and trust to be their advocate during the entire interview process, in addition to communicating feedback to hiring managers to improve the process.</p>
           <p>Now, I'm excited to contribute and transfer these skills to promote a safer and user-friendlier world by designing products focused on accessibility and habit formation. I'm currently available for UX opportunities - internship, contract, or full-time roles - and look forward to connecting.</p>
+        </div>
+        <div>
           <a href="files/ancisun_resume.pdf" class="button resume" target="_blank">View my resume</a>
         </div>
+      </div>
         <h2>Skills & Tools</h2>
         <div class="col-md-6">
           <h3>Relevant Skills</h3>
-          <ul>
+          <ul style="display:inline-block;">
             <li>Competitive analysis</li>
             <li>User personas</li>
             <li>User research</li>
@@ -67,7 +71,7 @@
         </div>
         <div class="col-md-6">
           <h3>Tools I use</h3>
-          <ul>
+          <ul style="display:inline-block;">
             <li>Adobe XD</li>
             <li>Sketch</li>
             <li>Balsamiq</li>
@@ -84,24 +88,20 @@
     </div>
   </main>
   <footer id="contact">
-    <div id="container">
+    <div class="container">
       <h2>Get in Touch</h2>
       <p>Like what you see? Feel free to get in touch to discuss opportunities.</p>
-      <nav>
-        <ul>
-          <li><i class="fa fa-envelope"></i> <a href="mailto:anci.sun@berkeley.edu" class="button contact">Email me</a>
-          <li><i class="fa fa-skype"></i> <a href="skype:anci.sun">Skype</a>
-          <li><i class="fa fa-linkedin"></i> <a href="http://www.linkedin.com/in/ancisun" target="_blank">LinkedIn</a>
-          <li><i class="fa fa-behance"></i> <a href="http://www.behance.net/ancisun" target="_blank">Behance</a>
-        </ul>
-      </nav>
+    </div>
+    <div>
+      <a href="mailto:anci.sun@berkeley.edu" class="button contact">Email me</a>
+    </div>
+    <div class="container">
+      <a href="http://www.linkedin.com/in/ancisun" target="_blank">LinkedIn</a>
     </div>
     <div>
       <p>&copy; Copyright 2019</p>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
 </body>
 
 </html>
